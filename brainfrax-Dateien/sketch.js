@@ -12,7 +12,7 @@ const maxVel = .3;
 
 const maxRot = .2;
 
-const polyCount = 500;
+const polyCount = 100;
 
 let polys = [];
 let currentID = 0;

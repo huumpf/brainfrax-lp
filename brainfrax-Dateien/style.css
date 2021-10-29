@@ -12,11 +12,10 @@ html, body {
   background-color: #090909;
 }
 
-#canvas-wrapper {
+canvas {
   display: block;
   position: absolute;
   z-index: -1;
-  visibility: hidden;
 }
 
 .wrapper {
@@ -43,13 +42,10 @@ html, body {
   margin-top: 35vh;
 }
 
-.rings {
-  width: 40px;
-}
-
 .logowrapper p {
   text-align: center;
   letter-spacing: 6px;
+  margin-left: -12px;
 }
 
 .topbar {
@@ -61,6 +57,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  background-color: #090909;
 }
 
 .topbar > .logo-short {
@@ -70,11 +67,11 @@ html, body {
   margin-top: -5px;
 }
 
-.topbar > button {
+.topbar > .button {
   margin-right: 40px;
 }
 
-button {
+.button {
   background-color: transparent;
   padding: 12px 0;
   border: none;
@@ -86,10 +83,82 @@ button {
   text-shadow: 0 0 30px rgba(255,194,0,.5);
 }
 
-button:hover {
+.button:hover {
   text-shadow: 0 0 30px rgba(255,194,0,1);
 }
 
 .yel {
   color: #FFC200;
+}
+
+a {
+  color: white;
+}
+
+.text {
+  margin-top: 100px;
+  max-width: 800px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 3em;
+}
+  
+@media screen and (min-width:720px) {
+  .text { font-size: 20px; }
+}
+
+.black {
+  font-weight: 800;
+}
+
+.text ul {
+  margin-bottom: 0.7em;
+  padding-left: 30px;
+  list-style-position: outside;
+  margin-left: .5em
+}
+
+.text h1, h2 {
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #FFC200;
+}
+
+.text h1 {
+  font-size: 1.8em;
+}
+
+.text h2 {
+  font-size: 1.5em;
+}
+
+.text li {
+    margin-top: 0.8em;
+}
+
+.text p {
+  margin-left: 2em;
+}
+
+.topics {
+    list-style: none; 
+}
+
+.topics li::before {
+    content: "→";
+    color: #FFC200;
+    display: "inline-block";
+    width: 1.15em;
+    margin-left: -1.15em;
+}
+
+.implink {
+  margin-left: 2em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  color: rgba(255,255,255,.3);
 }
