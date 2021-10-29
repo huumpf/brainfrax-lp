@@ -95,6 +95,10 @@ a {
   color: white;
 }
 
+p {
+  font-size: 20px;
+}
+
 .text {
   margin-top: 100px;
   max-width: 800px;
@@ -136,24 +140,31 @@ a {
   font-size: 1.5em;
 }
 
-.text li {
-    margin-top: 0.8em;
+.text h3 {
+  font-weight: 300;
+  color: #FFC200;
+  margin-left: 1.33em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+hr {
+  background:rgba(255,255,255,.15);
+  margin-top: 4em;
+  border: none;
+  height: 1px;
+}
+
+.text h4 {
+  margin-top: 4em;
+  font-weight: 300;
+  margin-left: 2em;
 }
 
 .text p {
   margin-left: 2em;
-}
-
-.topics {
-    list-style: none; 
-}
-
-.topics li::before {
-    content: "→";
-    color: #FFC200;
-    display: "inline-block";
-    width: 1.15em;
-    margin-left: -1.15em;
 }
 
 .implink {
@@ -161,4 +172,9 @@ a {
   margin-top: 4em;
   margin-bottom: 4em;
   color: rgba(255,255,255,.3);
+  text-decoration: none;
+}
+
+.implink:hover {
+  color: white;
 }
