@@ -18,7 +18,7 @@ let polys = [];
 let currentID = 0;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight * 3);
+  createCanvas(window.innerWidth, window.innerHeight * 5.5);
 
   for (let i = 0; i < polyCount; i++) {
     let poly = createPoly()
